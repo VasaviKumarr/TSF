@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1>Welcome to Isha Banking</h1>
+    <section class="header">
+    </section>
+    <body>
+        <div id="home-page">
+            <h2>Everyone's Funds Buzz</h2>
+            <a href="#" onclick="loadCustomers()">View All Customers</a>
+        </div>
+    
+        <div id="customers-page" style="display: none;">
+            <h2>Customer List</h2>
+            <table id="customer-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Balance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-list"></tbody>
+            </table>
+            <a href="#" onclick="loadHomePage()">Go Back</a>
+        </div>
+    
+        <div id="send-money-page" style="display: none;">
+            <h2>Send Money</h2>
+            <label for="amount">Amount: </label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="completeTransaction()">Send Money</button>
+            <a href="#" onclick="loadCustomerDetails()">Go Back</a>
+        </div>
+    
+        <div id="transaction-history-page" style="display: none;">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history-list"></ul>
+            <a href="#" onclick="loadHomePage()">Go Back</a>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+    
+</body>
+</html>
